@@ -11,12 +11,12 @@
     <div class ="row mt-5">
        <div class="col-md-6 card">
             <div class="row">
-                <div class="card-body">
+                <div class="card-body"style="height: 15rem;">
                     <form class="form" method="post" action="/dictionary">
                         <div class="row">
-                            <div class="col-12">
-                                <h3 class="btn btn-lg text-center"style="padding:20px;">Dictionary</h3>
-                                <input type="text" class="form-control" style="resize:none;" name="input_word">
+                            <div class="col-12" style="padding:20px;">
+                                <h3 class="btn btn-lg text-center">Dictionary : </h3><br>
+                                <input type="text" class="form-control" style="resize:non" name="input_word"><br>
                                 <input type="submit" class="btn btn-md form-control btn-primary" value="Search">
                             </div>
                         </div>
@@ -29,20 +29,15 @@
                 <div class="card-body">
                              <form class="form" name="convert">
                                     <div class="row">
-                                        <div class="col-12">
-                                            <h3 class = "btn btn-lg text-center" style="padding:20px;">Pronunciation</h3>
-                                            <input type="text" class="form-control" style="resize:none;" name="word">
+                                        <div class="col-12" style="padding:20px;">
+                                            <h3 class = "btn btn-lg text-center">Pronunciation : </h3><br>
+                                            <input type="text" class="form-control" style="resize:none;" name="word"><br>
                                             <input type="button" class="btn btn-md form-control btn-primary" value="Speak" onclick="process()">
                                         </div>
                                     </div>
                              </form>
                 </div>
             </div>
-
-
-
-
-
         </div>
     </div>
 </div>
