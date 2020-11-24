@@ -1,5 +1,4 @@
-
-https://img.shields.io/appveyor/job/build/Sankha1998/dictionarywebapp/student/master?color=green&label=Using&logo=Python-flask&logoColor=yellow <img src="https://img.shields.io/badge/domain-Web%20Scraping-orange.svg" >
+https://img.shields.io/badge/build%20with-python-yellow https://img.shields.io/badge/using-flask-green <img src="https://img.shields.io/badge/domain-Web%20Scraping-orange.svg" >
 
 # dictionarywebapp
 
