@@ -1,6 +1,7 @@
 # dictionarywebapp
 This repository contains the files realted to dictionarywebapp which is deployed in heroku
-![alt text](http://url/to/webapp_view.png)
+
+![alt text](https://github.com/[Sankha1998]/[dictionarywebapp]/blob/[master]/webapp_view.jpg?raw=true)
 
 
 Easy English, a dictionary web helps to find the meaning (English to English) of a given word provided by the user apart from that it also helps to help users in pronunciation.
