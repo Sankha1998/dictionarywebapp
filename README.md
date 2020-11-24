@@ -28,8 +28,8 @@ Synonyms have been scraped from URL = 'https://thesaurus.yourdictionary.com/'
 #### def word() --> receives the word provided by the user and restructures the above two URLs.
 
 For the word 'knife' respected URLs will be like this:
-		1. https://www.yourdictionary.com/knife
-		2. https://thesaurus.yourdictionary.com/knife
+		-- 1. https://www.yourdictionary.com/knife
+		-- 2. https://thesaurus.yourdictionary.com/knife
 
 respectively
 
@@ -39,8 +39,8 @@ respectively
 
 
 Again,for the word 'knife' respected URLs will be like this:
-		1. https://www.yourdictionary.com/knife
-		2. https://thesaurus.yourdictionary.com/knife
+		-- 1. https://www.yourdictionary.com/knife
+		-- 2. https://thesaurus.yourdictionary.com/knife
 
 respectively.
 
