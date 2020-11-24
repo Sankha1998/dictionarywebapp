@@ -1,4 +1,4 @@
-https://img.shields.io/badge/build%20with-python-yellow https://img.shields.io/badge/using-flask-green <img src="https://img.shields.io/badge/domain-Web%20Scraping-orange.svg" >
+<img src=https://img.shields.io/badge/build%20with-python-yellow> <img src=https://img.shields.io/badge/using-flask-green> <img src="https://img.shields.io/badge/domain-Web%20Scraping-orange.svg" >
 
 # dictionarywebapp
 
