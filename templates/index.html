@@ -1,0 +1,60 @@
+
+
+{% extends "base.html" %}
+{% block content %}
+
+
+<body>
+
+
+<div class="container">
+    <div class ="row mt-5">
+       <div class="col-md-6 card">
+            <div class="row">
+                <div class="card-body">
+                    <form class="form" method="post" action="/dictionary">
+                        <div class="row">
+                            <div class="col-12">
+                                <h3 class="btn btn-lg text-center"style="padding:20px;">Dictionary</h3>
+                                <input type="text" class="form-control" style="resize:none;" name="input_word">
+                                <input type="submit" class="btn btn-md form-control btn-primary" value="Search">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+       </div>
+       <div class="col-md-6 card">
+            <div class="row">
+                <div class="card-body">
+                             <form class="form" name="convert">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h3 class = "btn btn-lg text-center" style="padding:20px;">Pronunciation</h3>
+                                            <input type="text" class="form-control" style="resize:none;" name="word">
+                                            <input type="button" class="btn btn-md form-control btn-primary" value="Speak" onclick="process()">
+                                        </div>
+                                    </div>
+                             </form>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+</div>
+
+</body>
+<script type="text/javascript">
+function process(){
+var word = document.convert.word.value
+var msg = new SpeechSynthesisUtterance(word);
+window.speechSynthesis.speak(msg);
+
+}
+</script>
+
+{% endblock %}
