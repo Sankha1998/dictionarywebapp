@@ -13,8 +13,8 @@ a dictionary web helps to find the meaning (English to English) of a given word 
 
 This web app doesn't have any database. It's build using web scraping. Let's discuss the workflow : 
 
-when a user searched for a particular word. Let's say the word is "knife". That word "knife" is received in the function present in the python-flask (used for backend) through the POST method.
-URL, URL1 are formatted with the word "knife". Both the URL and URL1 are passed in two functions named "def meaning()" and "def synonym() respectively. These two scraping functions (Scraping has been done using BeautifulSoup library)return meanings and synonyms which is further displayed on this page URL("https://dictionarywebapp.herokuapp.com/dictionary")
+when an user searched for a particular word. Let's say the word is "knife". That word "knife" is received by the function present in the python-flask (used for backend) through the POST method.
+Both URL, URL1 are formatted with the word "knife". Both the URL and URL1 are passed in two functions named "def meaning()" and "def synonym() respectively. These two scraping functions (Scraping has been done using BeautifulSoup library)return meanings and synonyms which is further displayed on this page URL("https://dictionarywebapp.herokuapp.com/dictionary")
 
 Speak functionality has been introduced using javascript.(using SpeechSynthesisUtterance() method)
 
