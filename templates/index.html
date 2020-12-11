@@ -6,48 +6,46 @@
 
 <body>
 
-
 <div class="container">
     <div class ="row mt-5">
-       <div class="col-md-6 card">
+       <div class="col-md-6 offset-3 card">
             <div class="row">
-                <div class="card-body"style="height: 15rem;">
+                <div class="card-body stcard">
                     <form class="form" method="post" action="/dictionary">
-                        <div class="row">
-                            <div class="col-12" style="padding:20px;">
-                                <h3 class="btn btn-lg text-center">Dictionary : </h3><br>
-                                <input type="text" class="form-control" style="resize:non" name="input_word"><br>
-                                <input type="submit" class="btn btn-md form-control btn-primary" value="Search">
+                            <div class="col-md-12" style="padding:20px;">
+                                <h3 class="btn btn-lg text-center text-danger">ASK ME : </h3><br>
+                                <div class="row">
+                                    <div class="col-8">
+                                        <input type="text" class="form-control" style="resize:non" id="word" name="word">
+                                         </div>
+                                    <div class="col-2">
+                                        <button type="button" class="btn btn-sm form-control btn-light" onclick="process()"><i class="fa fa-play-circle" aria-hidden="true"></i></button>
+                                    </div>
+                                    <div class="col-2">
+                                        <button type="submit" class="btn btn-sm form-control btn-warning" value=""><i class="fa fa-search fa-lg" aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
                     </form>
                 </div>
             </div>
        </div>
-       <div class="col-md-6 card">
-            <div class="row">
-                <div class="card-body">
-                             <form class="form" name="convert">
-                                    <div class="row">
-                                        <div class="col-12" style="padding:20px;">
-                                            <h3 class = "btn btn-lg text-center">Pronunciation : </h3><br>
-                                            <input type="text" class="form-control" style="resize:none;" name="word"><br>
-                                            <input type="button" class="btn btn-md form-control btn-primary" value="Speak" onclick="process()">
-                                        </div>
-                                    </div>
-                             </form>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 
 </body>
 <script type="text/javascript">
 function process(){
-var word = document.convert.word.value
-var msg = new SpeechSynthesisUtterance(word);
-window.speechSynthesis.speak(msg);
+let msg = document.getElementById("word").value;
+let speech = new SpeechSynthesisUtterance();
+
+speech.lang = "en-US";
+speech.text = msg;
+speech.volume = 1;
+speech.rate = 1;
+speech.pitch = 1;
+
+window.speechSynthesis.speak(speech);
 
 }
 </script>

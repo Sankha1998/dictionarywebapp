@@ -58,7 +58,7 @@ def home():
 
 @app.route('/dictionary', methods=['POST'])
 def word():
-    inp_word = request.form.get('input_word')
+    inp_word = request.form.get('word')
     url = 'https://www.yourdictionary.com/{}'.format(inp_word)
     url1 = 'https://thesaurus.yourdictionary.com/{}'.format(inp_word)
     meanings_list = meaning(url)

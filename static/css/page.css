@@ -1,0 +1,13 @@
+body{
+background: #D3CCE3;
+background: -webkit-linear-gradient(to right, #eee, #D3CCE3);
+background: linear-gradient(to right, #eeee, #D3CCE3);
+
+}
+
+.stcard{
+height: 15rem;
+background-color :background: #0F2027;
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+}
